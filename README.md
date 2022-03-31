@@ -17,3 +17,32 @@ Things to note:
 3. Tract 5327 near Virginia Park was a tract of interest that the group picked out, as it is a lower civic participation tract surrounded by high civic participation - the regression model picks this out as one that should have a higher civic participation (0.333 predicted) but the actual (-2.5) is much lower. Interesting to maybe take a look at what else is going on in that tract.
 4. Tract 5064 is the tract with one of the lowest residuals, meaning the difference between the predicted (0.594) and actual (-4.16) was one of the greatest - this is likely due to the presence of the Detroit Detention Center between Nevada and Davison skewing the results.
 5. Southwest Detroit has low scores and low residuals, meaning the model predicted that those tracts would have much higher civic participation scores than they actually did.
+
+
+### Data Sources:
+1. All Doors FINAL Redacted 11-1-21.csv
+- door knocking done by the city, given to me by Steve Mintline
+
+2. 2020 Census Response Rate by Tract (2).xlsx - decennialrr2020 (1).csv
+- I think taken from department of health, given to me by Steve Mintline
+
+3. Vaccine Coverage by Census Tract as of 11.30.2021.xlsx
+- these census numbers are from 2019 ACS - Steve M will give updated data that is 2020 census these are using CT10s
+
+4. November 2020 General List of Voters.xlsx
+- came from the city, don't know exact source
+
+5. DECENNIALSF12010.P1_data_with_overlays_2021-12-05T220113.csv
+- total population, from census: https://data.census.gov/cedsci/all?g=0500000US26163%241400000&y=2010&d=DEC%20Summary%20File%201
+
+6. ACSST5Y2019.S1902_data_with_overlays_2021-12-05T222015.csv
+- income / housing units, from census: https://data.census.gov/cedsci/all?g=0500000US26163%241400000&y=2010&d=DEC%20Summary%20File%201
+
+7. ACSDT5Y2019.B05003_2022-01-25T195654/ACSDT5Y2019.B05003_data_with_overlays_2022-01-25T195636.csv
+- citizenship status, from census (needed for the denominator of # of people who voted in november 2020): table B05003 (link was changed around recently)
+
+8. DECENNIALPL2020.P1_data_with_overlays_2021-12-08T181156.csv
+- pop black / white, from census: https://data.census.gov/cedsci/table?q=percent%20black&g=0500000US26163%241400000&y=2019&d=ACS%205-Year%20Estimates%20Data%20Profiles
+
+9. ACSST5Y2019.S0101_2022-02-08T213209/ACSST5Y2019.S0101_data_with_overlays_2022-02-08T213200.csv
+- Age 2019 ACS, ACS census: https://data.census.gov/cedsci/table?q=Age%20and%20Sex&t=Population%20Total%3APopulations%20and%20People&g=0500000US26163%241400000&tid=ACSST5Y2019.S0101
